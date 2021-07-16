@@ -62,6 +62,20 @@ import footer from '@/components/footer.vue'
 import contactsection from '@/components/contactsection.vue'
 import header from '@/components/header.vue'
 export default {
+  head() {
+  // sets document title
+  return {
+  title: 'Best back-end frameworks',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: [
+      { hid: 'description', name: 'description', content: 'Best back-end frameworks' }
+  ],
+  link: [
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/best-backend-frameworks/'}
+]
+}
+},
 components: {
   'footer-app': footer,
   'contactsection': contactsection,

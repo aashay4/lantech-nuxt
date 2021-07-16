@@ -127,6 +127,20 @@ import footer from '@/components/footer.vue'
 import contactsection from '@/components/contactsection.vue'
 import header from '@/components/header.vue'
 export default {
+  head() {
+  // sets document title
+  return {
+  title: 'Web Development Services | Hire Web Developers',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: [
+      { hid: 'description', name: 'description', content: 'With the dedicated team of web developers, get top-notch web development services at the most affordable price. Visit our website and Hire web developers today.' }
+  ],
+  link: [
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/web-development-services/'}
+]
+}
+},
   components: {
     'footer-app': footer,
     'contactsection': contactsection,

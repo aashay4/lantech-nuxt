@@ -41,6 +41,20 @@ import footer from '@/components/footer.vue'
 import contactsection from '@/components/contactsection.vue'
 import header from '@/components/header.vue'
 export default {
+  head() {
+  // sets document title
+  return {
+  title: 'Pros and Cons of Vuejs',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: [
+      { hid: 'description', name: 'description', content: 'Everything about vuejs' }
+  ],
+  link: [
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/pros-cons-vue-js/'}
+]
+}
+},
   components: {
   'footer-app': footer,
   'contactsection': contactsection,

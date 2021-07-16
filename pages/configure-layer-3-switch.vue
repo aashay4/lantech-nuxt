@@ -170,6 +170,20 @@ import footer from '@/components/footer.vue'
 import contactsection from '@/components/contactsection.vue'
 import header from '@/components/header.vue'
 export default {
+  head() {
+  // sets document title
+  return {
+  title: 'Configure Layer-3 Switch',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: [
+      { hid: 'description', name: 'description', content: 'Learn about configuring layer 3 switch.' }
+  ],
+  link: [
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/configure-layer-3-switch/'}
+]
+}
+},
   components: {
   'footer-app': footer,
   'contactsection': contactsection,

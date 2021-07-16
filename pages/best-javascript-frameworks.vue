@@ -71,6 +71,20 @@ import footer from '@/components/footer.vue'
 import contactsection from '@/components/contactsection.vue'
 import header from '@/components/header.vue'
 export default {
+  head() {
+  // sets document title
+  return {
+  title: 'Best Javascript frameworks',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: [
+      { hid: 'description', name: 'description', content: 'Get to know about various javascript frameworks for the year 2021' }
+  ],
+  link: [
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/best-javascript-frameworks/'}
+]
+}
+},
   components: {
     'footer-app': footer,
 'contactsection': contactsection,

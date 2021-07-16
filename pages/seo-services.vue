@@ -91,6 +91,20 @@ import footer from '@/components/footer.vue'
 import contactsection from '@/components/contactsection.vue'
 import header from '@/components/header.vue'
 export default {
+  head() {
+  // sets document title
+  return {
+  title: 'SEO Services Ahmedabad | Hire SEO Expert',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: [
+      { hid: 'description', name: 'description', content: 'We are top seo company in India. Expand your business on the digitally with SEO services. With unique strategy, we skyrocket businesses. Contact to hire seo expert.' }
+  ],
+  link: [
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/seo-services/'}
+]
+}
+},
   components: {
     'footer-app': footer,
     'contactsection': contactsection,

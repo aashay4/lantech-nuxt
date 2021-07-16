@@ -125,6 +125,20 @@ import footer from '@/components/footer.vue'
 import contactsection from '@/components/contactsection.vue'
 import header from '@/components/header.vue'
 export default {
+  head() {
+  // sets document title
+  return {
+  title: 'App Development Company India | Develop Mobile App',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: [
+      { hid: 'description', name: 'description', content: 'Lantech Infocom is moile app development company in India & USA. Get innovative app development services in Android and IOS with Ionic, PhoneGap, React-native frameworks.' }
+  ],
+  link: [
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/mobile-app-development-services/'}
+]
+}
+},
   components: {
   'footer-app': footer,
   'contactsection': contactsection,

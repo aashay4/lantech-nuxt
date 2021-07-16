@@ -385,6 +385,20 @@ import pricesection from '@/components/pricesection.vue'
 import header from '@/components/header.vue'
 
 export default {
+  head() {
+  // sets document title
+  return {
+  title: 'Computer networking company | Lantech Infocom',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: [
+      { hid: 'description', name: 'description', content: 'Lantech Infocom provides computer networking services. It is a well-known computer networking company which has done around 500 computer networking projects.' }
+  ],
+  link: [
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/'}
+]
+}
+},
   components: {
     'footer-app': footer,
   'contactsection': contactsection,
