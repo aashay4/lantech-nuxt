@@ -10,10 +10,6 @@
           <li class="w3-padding-16"><b>Ecommerce SEO</b></li>
           <li class="w3-padding-16"><b>Javascript SEO</b></li>
           <li class="w3-padding-16"><b>White Label SEO</b></li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide">$12</h2>
-            <span class="w3-opacity">per hour</span>
-          </li>
           <li class="w3-light-grey w3-padding-24">
             <router-link to="/seo-services/">
             <button class="w3-button w3-black w3-padding-large">Know More</button></router-link>
@@ -27,10 +23,6 @@
           <li class="w3-padding-16" style="color: red;"><b>Vue.js Development</b></li>
           <li class="w3-padding-16" style="color: red;"><b>React.js Development</b></li>
           <li class="w3-padding-16" style="color: red;"><b>Angular Development</b></li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide">$20</h2>
-            <span class="w3-opacity">per hour</span>
-          </li>
           <li class="w3-light-grey w3-padding-24">
             <router-link to="/web-development-services/">
             <button class="w3-button w3-black w3-padding-large w3-hover-red">Know More</button></router-link>
@@ -44,10 +36,6 @@
           <li class="w3-padding-16"><b>Phonegap Development</b></li>
           <li class="w3-padding-16"><b>React-Native Development</b></li>
           <li class="w3-padding-16"><b>Vue Native Development</b></li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide">$16</h2>
-            <span class="w3-opacity">per hour</span>
-          </li>
           <li class="w3-light-grey w3-padding-24">
             <router-link to="/mobile-app-development-services/">
             <button class="w3-button w3-black w3-padding-large">Know More</button></router-link>
