@@ -36,13 +36,7 @@ export default {
   },
   methods: {
   industrial: function() {
-    let data = { networkmigra: this.networkmigra, email: this.email, phone: this.phone, question: this.question }
-    createNote(data)
-    .then(response => {
-      console.log(response);
-    })
-    .catch(err => alert(err.message));
-  }
+      }
   }
 }
 </script>
