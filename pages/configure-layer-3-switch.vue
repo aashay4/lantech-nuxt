@@ -180,7 +180,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Learn about configuring layer 3 switch.' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/configure-layer-3-switch/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/configure-layer-3-switch'}
 ]
 }
 },

@@ -395,7 +395,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Lantech Infocom provides computer networking services. It is a well-known computer networking company which has done around 500 computer networking projects.' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in'}
 ]
 }
 },

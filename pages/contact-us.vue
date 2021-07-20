@@ -21,7 +21,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Contact us - Lantech Infocom' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/contact-us/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/contact-us'}
 ]
 }
 },

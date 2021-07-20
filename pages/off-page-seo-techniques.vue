@@ -50,7 +50,7 @@ export default {
         { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-   {rel: 'canonical', href: 'https://lantechinfocom.co.in/off-page-seo-techniques/'}
+   {rel: 'canonical', href: 'https://lantechinfocom.co.in/off-page-seo-techniques'}
   ]
   }
   },

@@ -137,7 +137,7 @@ export default {
       { hid: 'description', name: 'description', content: 'With the dedicated team of web developers, get top-notch web development services at the most affordable price. Visit our website and Hire web developers today.' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/web-development-services/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/web-development-services'}
 ]
 }
 },

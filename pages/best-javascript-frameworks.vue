@@ -81,7 +81,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Get to know about various javascript frameworks for the year 2021' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/best-javascript-frameworks/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/best-javascript-frameworks'}
 ]
 }
 },

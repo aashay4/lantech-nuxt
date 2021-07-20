@@ -135,7 +135,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Lantech Infocom is moile app development company in India & USA. Get innovative app development services in Android and IOS with Ionic, PhoneGap, React-native frameworks.' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/mobile-app-development-services/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/mobile-app-development-services'}
 ]
 }
 },

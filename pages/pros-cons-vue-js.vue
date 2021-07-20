@@ -51,7 +51,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Everything about vuejs' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/pros-cons-vue-js/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/pros-cons-vue-js'}
 ]
 }
 },

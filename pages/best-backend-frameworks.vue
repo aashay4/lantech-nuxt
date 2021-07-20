@@ -72,7 +72,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Best back-end frameworks' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/best-backend-frameworks/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/best-backend-frameworks'}
 ]
 }
 },

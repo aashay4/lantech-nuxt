@@ -56,7 +56,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/best-node-js-packages/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/best-node-js-packages'}
 ]
 }
 },

@@ -101,7 +101,7 @@ export default {
       { hid: 'description', name: 'description', content: 'We are top seo company in India. Expand your business on the digitally with SEO services. With unique strategy, we skyrocket businesses. Contact to hire seo expert.' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/seo-services/'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/seo-services'}
 ]
 }
 },
