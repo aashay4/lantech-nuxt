@@ -39,6 +39,7 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/google-adsense',
+    '@nuxtjs/sitemap',
   ],
 
   'google-adsense': {
