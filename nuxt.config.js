@@ -41,7 +41,9 @@ module.exports = {
     '@nuxtjs/google-adsense',
     '@nuxtjs/sitemap',
   ],
-
+  sitemap: {
+    hostname: 'https://lantechinfocom.co.in',
+},
   'google-adsense': {
     id: 'ca-pub-6829148792481216'
   },
