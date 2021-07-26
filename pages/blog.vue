@@ -15,7 +15,7 @@
           :key="post.id"
           :title="post.title"
           :excert="post.previewText"
-          :id="post.id" /><hr>
+          :id="post.id" />
         </section>
           </div>
                 </div>
@@ -99,7 +99,15 @@ data() {
       {
       title: 'Top Trending SEO Techniques',
       id: '/trending-seo-techniques'
-    }
+    },
+    {
+    title: 'Importance of Cross-Platform Frameworks',
+    id: '/why-cross-platform-frameworks'
+  },
+  {
+  title: 'Top Best Cross-Platform Frameworks',
+  id: '/top-cross-platform-frameworks'
+}
 ],
 search: ''
 }

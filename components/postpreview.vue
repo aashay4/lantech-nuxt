@@ -1,5 +1,6 @@
 <template lang="html">
   <div class="w3-row">
+    <hr>
   <router-link
   :to="id">
     <article>
