@@ -107,6 +107,10 @@ data() {
   {
   title: 'Top Best Cross-Platform Frameworks',
   id: '/top-cross-platform-frameworks'
+},
+{
+title: 'Top Best Github Projects',
+id: '/best-github-projects'
 }
 ],
 search: ''
