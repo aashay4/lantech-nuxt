@@ -40,6 +40,7 @@ export default {
     // TIP use this.model to send it to api and perform register call
     this.$axios.post('/api/sites')
       .then((response) => {
+        console.log(response);
         this.macaddress = response.data.["Wi-Fi"].mac;
         this.ipv4 = response.data.["Wi-Fi"].ipv4;
         this.ipv6 = response.data.["Wi-Fi"].ipv6;
