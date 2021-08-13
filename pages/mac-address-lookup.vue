@@ -11,7 +11,6 @@
       </div>
 </template>
 <script>
-import socket from '~/plugins/socket.io.js'
 export default {
   head() {
   // sets document title
@@ -36,11 +35,6 @@ export default {
       ipv6: ''
       }
     },
-  beforeMount(){
-    socket.on('showmac', (address) => {
-      console.log("RObots found: " + address);
-    })
-  },
   methods: {
     updateProfile() {
     // TIP use this.model to send it to api and perform register call
@@ -55,18 +49,10 @@ export default {
 
       });
 },
-    register() {
 
-        if(this.address.includes("http")){
-          socket.emit('findmac', this.address);
-      }
-      else{
-        this.model.domain = "http://" + this.model.domain;
-    socket.emit('seo-checker', this.address);
-      }
+
     }
     }
-  }
 </script>
 <style>
 .card .alert {
