@@ -4,6 +4,9 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  serverMiddleware: [
+  '~/api/index.js'
+  ],
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -56,8 +59,9 @@ module.exports = {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {
-  },
+    axios: {
+  proxy: true
+},
   /*
   ** Build configuration
   */
