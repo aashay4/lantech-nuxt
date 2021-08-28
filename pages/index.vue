@@ -7,7 +7,7 @@
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
- <img style="width: 100%; height: 650px;" src="../assets/Server-Room.jpg" alt="Lantech Infocom">
+ <img style="width: 100%; height: 650px;" alt="Lantech Infocom">
 <div class="w3-display-left w3-text-white" style="padding:48px">
   <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
   <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
