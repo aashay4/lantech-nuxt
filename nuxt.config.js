@@ -51,6 +51,11 @@ module.exports = {
   ],
   sitemap: {
     hostname: 'https://lantechinfocom.co.in',
+    exclude: [
+     '/hexadecimal-to-decimal',
+     '/decimal-to-hexadecimal',
+     '/binarytotext'
+   ],
 },
   'google-adsense': {
     id: 'ca-pub-6829148792481216'
