@@ -111,6 +111,10 @@ data() {
 {
 title: 'Top Best Github Projects',
 id: '/best-github-projects'
+},
+{
+title: 'How to Improve Page Loading speed?',
+id: '/how-to-improve-page-loading-speed'
 }
 ],
 search: ''
