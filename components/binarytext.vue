@@ -1,9 +1,9 @@
 <template lang="html">
-  <div class="w3-hover-shadow w3-panel w3-leftbar w3-light-grey" style="height: 376px;"><br>
+  <div class="w3-hover-shadow w3-panel w3-card w3-leftbar w3-light-grey" style="height: 376px;"><br>
             <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
-            <button v-on:click="binarytotext()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Binary to Text</button>
-            <button v-on:click="texttobinary()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Text to Binary</button>
-            <button v-on:click="reset()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
+            <button v-on:click="binarytotext()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Binary to Text</button>
+            <button v-on:click="texttobinary()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Text to Binary</button>
+            <button v-on:click="reset()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
             <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Conversion:</b> {{ ans }}</div><br><br>
             </div>
 </template>

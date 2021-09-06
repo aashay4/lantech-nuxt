@@ -7,5 +7,6 @@ const articlesController = require('../controllers/articlesController')
 
 
 router.post('/sites', articlesController.sites)
+router.post('/woll', articlesController.woll)
 
 module.exports = router

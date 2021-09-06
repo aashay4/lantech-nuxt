@@ -69,6 +69,10 @@ data() {
     question: '',
     posts: [
       {
+      title: 'Wake on LAN Tool',
+      id: '/wake-on-lan'
+    },
+      {
       title: 'Best Back-end Frameworks',
       id: '/best-backend-frameworks'
     },

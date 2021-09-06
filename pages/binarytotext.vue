@@ -3,7 +3,7 @@
     <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">Binary To Text Converter (Translator)</h1>
+          <h1 class="w3-text-amber">Binary To Text</h1>
 <binarytext />
           <Adsense
         class="adsbygoogle infeed"
@@ -13,7 +13,7 @@
         data-ad-format="auto"
         data-full-width-responsive="true">
         </Adsense>
-            <h1 class="w3-text-teal">Binary Translator</h1>
+            <h1 class="w3-text-amber">Binary Translator</h1>
             <div>
             <binarytranslator />
           </div>
