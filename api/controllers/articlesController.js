@@ -1,6 +1,5 @@
 const wol = require('wol');
-const is_ip_private = require('private-ip')
-var network = require('network');
+const is_ip_private = require('private-ip');
 
     module.exports.woll = function (req, res, next) {
       var x = req.body.input;
