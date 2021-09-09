@@ -43,7 +43,8 @@
   </div>
 <div class="w3-padding w3-margin-top">
   <h2>Other Posts</h2>
-<a href="/configure-layer-3-switch">Configure layer 3 Switch</a>
+<a href="/configure-layer-3-switch">Configure layer 3 Switch</a><br>
+<a href="/check-private-ip">Check Private IP</a>
 </div>
 <!-- END w3-content -->
 </div>

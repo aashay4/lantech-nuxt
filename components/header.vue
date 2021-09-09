@@ -4,6 +4,7 @@
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <router-link class="w3-bar-item w3-button w3-wide" to="/">HOME</router-link>
     <router-link class="w3-bar-item w3-button w3-wide" to="/blog">BLOG</router-link>
+    <router-link class="w3-bar-item w3-button w3-wide" to="/networking-tools">TOOLS</router-link>
     <!-- Right-sided navbar links -->
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
   </div>

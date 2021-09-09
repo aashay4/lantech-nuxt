@@ -54,7 +54,8 @@ module.exports = {
     exclude: [
      '/hexadecimal-to-decimal',
      '/decimal-to-hexadecimal',
-     '/binarytotext'
+     '/binarytotext',
+     '/network-checkup'
    ],
 },
   'google-adsense': {

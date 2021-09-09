@@ -73,57 +73,9 @@ data() {
       id: '/wake-on-lan'
     },
     {
-    title: 'Check Private IP',
-    id: '/check-private-ip'
-  },
-      {
-      title: 'Best Back-end Frameworks',
-      id: '/best-backend-frameworks'
-    },
-    {
-      title: 'Best Javascript Frameworks',
-      id: '/best-javascript-frameworks'
-    },
-    {
-      title: 'Best Node.js Packages',
-      id: '/best-node-js-packages'
-    },
-    {
-      title: 'Configure Layer-3 Switch Easily',
-      id: '/configure-layer-3-switch'
-    },
-    {
-      title: 'Must have Android apps',
-      id: '/must-have-android-apps'
-    },
-    {
-      title: 'Off-page SEO Techniques',
-      id: '/off-page-seo-techniques'
-    },
-      {
-      title: 'Pros and Cons of Vue.js Framework',
-      id: '/pros-cons-vue-js'
-    },
-      {
-      title: 'Top Trending SEO Techniques',
-      id: '/trending-seo-techniques'
-    },
-    {
-    title: 'Importance of Cross-Platform Frameworks',
-    id: '/why-cross-platform-frameworks'
-  },
-  {
-  title: 'Top Best Cross-Platform Frameworks',
-  id: '/top-cross-platform-frameworks'
-},
-{
-title: 'Top Best Github Projects',
-id: '/best-github-projects'
-},
-{
-title: 'How to Improve Page Loading speed?',
-id: '/how-to-improve-page-loading-speed'
-}
+      title: 'Check Private IP',
+      id: '/check-private-ip'
+    }
 ],
 search: ''
 }
