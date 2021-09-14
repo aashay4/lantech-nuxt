@@ -76,6 +76,10 @@ data() {
     title: 'Check Private IP',
     id: '/check-private-ip'
   },
+  {
+  title: 'An introduction to AI',
+  id: '/introduction-to-artificial-intelligence'
+},
       {
       title: 'Best Back-end Frameworks',
       id: '/best-backend-frameworks'

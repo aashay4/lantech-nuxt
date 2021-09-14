@@ -44,14 +44,14 @@ export default {
   head() {
   // sets document title
   return {
-  title: 'Blog',
+  title: 'Networking and Communication Tools',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Web development, Mobile app development and technology blog' }
+      { hid: 'description', name: 'description', content: 'Computer networking and technology tools with code explanation.' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/blog'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/networking-tools'}
 ]
 }
 },
