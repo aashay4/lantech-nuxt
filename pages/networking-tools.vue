@@ -75,6 +75,18 @@ data() {
     {
       title: 'Check Private IP',
       id: '/check-private-ip'
+    },
+    {
+      title: 'Binary to text',
+      id: '/binarytotext'
+    },
+    {
+      title: 'Hexadecimal to decimal',
+      id: '/hexadecimal-to-decimal'
+    },
+    {
+      title: 'Decimal to Hexadecimal',
+      id: '/decimal-to-hexadecimal'
     }
 ],
 search: ''
