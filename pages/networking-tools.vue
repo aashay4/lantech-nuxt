@@ -87,6 +87,10 @@ data() {
     {
       title: 'Decimal to Hexadecimal',
       id: '/decimal-to-hexadecimal'
+    },
+    {
+      title: 'QR Code Generator',
+      id: '/qr-code-generator'
     }
 ],
 search: ''

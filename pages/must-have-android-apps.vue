@@ -22,7 +22,7 @@
 <p><b>Play store link: </b><a href="https://play.google.com/store/apps/details?id=com.dropbox.android">https://play.google.com/store/apps/details?id=com.dropbox.android</a></p>
 <h3>Binary translator</h3>
 <p>Binary translator app is an educational app and useful for students who are into electronics and computer science. With this app, you can convert the binary numbers into text values, decimal, hexadecimal, and octal with just one click. Great for those who have limited access to the internet because this app works on the slow internet and off-line as well. A great choice if you are a student!</p>
-<p><b>Play store link: </b><a href="https://play.google.com/store/apps/details?id=com.binary.text">https://play.google.com/store/apps/details?id=com.binary.text</a></p>
+<p><b>Play store link: </b><a rel="dofollow" href="https://play.google.com/store/apps/details?id=com.binary.text">https://play.google.com/store/apps/details?id=com.binary.text</a></p>
 <h3>Google Drive</h3>
 <p>If you have to deal with a lot of data then downloading Google Drive and signing up for Google drive can be a great option. It is free, along with that, you can edit and create various word and PPT documents easily with the help of this app. Not only that, but it also helps you to save all the important data on the cloud. You can use and access that data from anywhere with internet access.</p>
 <p><b>Play store link: </b><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs">https://play.google.com/store/apps/details?id=com.google.android.apps.docs</a></p>
@@ -62,7 +62,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Get to know about the best must have android apps' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/must-have-mobile-apps'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/must-have-android-apps'}
 ]
 }
 },
