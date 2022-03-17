@@ -5,7 +5,7 @@
     <div style="margin-top:48px">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Ahmedabad, IN</p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9426527612</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: aashay@lantechinfocom.co.in</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: support@lantechinfocom.co.in</p>
       <br>
         <p><input class="w3-input w3-border" v-model="networkmigra" type="text" placeholder="Name" required name="Name"></p>
         <p><input class="w3-input w3-border" v-model="email" type="text" placeholder="Email" required name="Email"></p>
