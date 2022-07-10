@@ -9,6 +9,14 @@
         <div class="w3-justify">
           <h1>Check Private IP</h1>
           <hr>
+          <Adsense
+        class="adsbygoogle infeed"
+        style="display:block"
+        data-ad-client="ca-pub-6829148792481216"
+        data-ad-slot="4199493091"
+        data-ad-format="auto"
+        data-full-width-responsive="true">
+      </Adsense><br>
           <p>A private IP is nothing but the computer address on the internet protocol that uses private address space on the internet. These private IP address are used in the residential, office, enterprise and local area networks. Both commonly used versions of IP address, IPv4 and IPv6 are termed in the private IP addres. Here is the private IP address checker that helps you to determine an inserted IP is private address or not.</p>
           <div class="w3-hover-shadow w3-panel w3-card w3-leftbar w3-light-grey" style="height: 376px;"><br>
                     <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter the MAC Address"/><br><br>
@@ -92,5 +100,20 @@ else{
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+@media (min-width: 350px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 500px) {
+    .infeed {
+      height: 290px;
+    }
+  }
+ @media (min-width: 800px) {
+    .infeed {
+      height: 290px;
+    }
+  }
 </style>
