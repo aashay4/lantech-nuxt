@@ -18,6 +18,7 @@
           :id="post.id" />
         </section>
           </div>
+          
                 </div>
               </div>
 
