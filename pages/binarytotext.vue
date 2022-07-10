@@ -5,14 +5,14 @@
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-amber">Binary To Text</h1>
 <binarytext />
-          <Adsense
-        class="adsbygoogle infeed"
-        style="display:block"
-        data-ad-client=""
-        data-ad-slot=""
-        data-ad-format="auto"
-        data-full-width-responsive="true">
-        </Adsense>
+<Adsense
+class="adsbygoogle infeed"
+style="display:block"
+data-ad-client="ca-pub-6829148792481216"
+data-ad-slot="4199493091"
+data-ad-format="auto"
+data-full-width-responsive="true">
+</Adsense><br>
             <h1 class="w3-text-amber">Binary Translator</h1>
             <div>
             <binarytranslator />
@@ -39,7 +39,7 @@ export default {
       { name: 'robots', content: 'noindex,nofollow' }
   ],
   link: [
- {rel: 'canonical', href: 'https://binarytotext.net/'}
+ {rel: 'canonical', href: ''}
 ]
 }
 },

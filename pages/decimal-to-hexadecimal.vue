@@ -4,6 +4,14 @@
       <div class="">
         <div class="w3-row w3-twothird w3-container">
           <h1 class="w3-text-teal">Decimal to Hexadecimal</h1>
+          <Adsense
+        class="adsbygoogle infeed"
+        style="display:block"
+        data-ad-client="ca-pub-6829148792481216"
+        data-ad-slot="4199493091"
+        data-ad-format="auto"
+        data-full-width-responsive="true">
+      </Adsense><br>
             <div class="w3-panel w3-leftbar w3-light-grey" style="height: 376px;"><br>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
           <button v-on:click="dectohex()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="width: 49%">Decimal to Hexadecimal</button>

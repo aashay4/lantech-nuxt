@@ -4,6 +4,14 @@
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Hexadecimal to Decimal Converter</h1>
+          <Adsense
+        class="adsbygoogle infeed"
+        style="display:block"
+        data-ad-client="ca-pub-6829148792481216"
+        data-ad-slot="4199493091"
+        data-ad-format="auto"
+        data-full-width-responsive="true">
+      </Adsense><br>
           <div class="w3-hover-shadow w3-panel w3-leftbar w3-light-grey" style="height: 500px;"><br>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
           <button class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" v-on:click="hextodec(); hextobin();" style="width: 49%">Hexadecimal to Decimal</button>
