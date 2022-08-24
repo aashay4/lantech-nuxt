@@ -77,6 +77,10 @@ data() {
     id: '/check-private-ip'
   },
   {
+    title: 'Wifi checker',
+    id: '/wifi-checker'
+  },
+  {
   title: 'An introduction to AI',
   id: '/introduction-to-artificial-intelligence'
 },
