@@ -3,8 +3,6 @@
     <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-amber">Binary To Text</h1>
-<binarytext />
 <Adsense
 class="adsbygoogle infeed"
 style="display:block"

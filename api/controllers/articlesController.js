@@ -1,6 +1,11 @@
 const wol = require('wol');
 const is_ip_private = require('private-ip');
 const wifi = require('node-wifi');
+var sha1 = require('sha-1');
+var sha256 = require('sha256');
+var sha512 = require('js-sha512');
+var md5 = require('md5');
+
 
     module.exports.woll = function (req, res, next) {
       var x = req.body.input;
@@ -9,6 +14,41 @@ const wifi = require('node-wifi');
                 return res.json(res1);
       });
         };
+
+module.exports.sha1 = function (req, res, next) {
+         var x = req.body.input;
+         var pp = sha1(x);
+         return res.json(pp);
+            };
+
+module.exports.sha256 = function (req, res, next) {
+  var x = req.body.input;
+  const mainout = [];
+  var pp = sha256(x);
+    mainout.push(pp);
+  var pq = sha256.x2(x);
+    mainout.push(pq);
+  var pr = sha256(x, { asBytes: true });
+    mainout.push(pr);
+  var ps = sha256(x, { asString: true });
+    mainout.push(ps);
+      //return res.json(pp);
+      return res.json(mainout);
+      };
+
+
+      module.exports.sha512 = function (req, res, next) {
+        var x = req.body.input;
+        var t = sha512(x);
+            return res.json(t);
+            };
+
+            module.exports.md5 = function (req, res, next) {
+            var x = req.body.input;
+            x = md5(x);
+            return res.json(x);
+            };
+
 
  module.exports.cpi = function (req, res, next) {
           var x = req.body.input;

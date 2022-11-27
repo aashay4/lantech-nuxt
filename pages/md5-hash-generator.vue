@@ -7,7 +7,7 @@
     <div class="w3-col l8 s12">
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-justify">
-          <h1>Check wifi information</h1>
+          <h1>md5 hash generator</h1>
           <hr>
           <Adsense
         class="adsbygoogle infeed"
@@ -17,13 +17,19 @@
         data-ad-format="auto"
         data-full-width-responsive="true">
       </Adsense><br>
-          <div class="w3-hover-shadow w3-panel w3-card w3-leftbar w3-light-grey" style="height: 550px;"><br>
-                    <button v-on:click="wakeonlan()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Get wifi information</button>
-                    <button v-on:click="reset()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
-                    <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 220; overflow: scroll;"><b>Response:</b> {{ answer }}</div><br><br>
+          <p></p>
+          <div class="w3-hover-shadow w3-panel w3-card w3-leftbar w3-light-grey" style="height: 460;"><br>
+                    <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a String"/><br><br>
+                    <button v-on:click="sha1create()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">md5 hash generator</button>
+                    <button v-on:click="reset()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
+                    <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 150px; overflow: scroll;"><b>MD5-HASH:</b> {{ answer }}</div><br><br>
                     </div>
         </div>
       </div>
+              <div class="w3-padding">
+                <h1 class="w3-center">How does md5 hash generator Works?</h1>
+                <p></p>
+              </div>
     <!-- About/Information menu -->
 
   <!-- END GRID -->
@@ -49,14 +55,14 @@ export default {
   head() {
   // sets document title
   return {
-  title: 'Check information of a Wi-fi',
+  title: 'md5 hash generator',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'Wifi checker' }
+      { hid: 'description', name: 'description', content: 'md5 hash generator' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/wifi-checker'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/md5-hash-generator'}
 ]
 }
 },
@@ -68,49 +74,31 @@ components: {
 data (){
   return {
     text_value: '',
-    answer: ''
+    answer: '',
+    answer1: '',
+    answer2: '',
+    answer3: ''
   }
 },
 methods: {
   reset(){
     this.answer = '';
     this.text_value = '';
+    this.answer1 = '';
+    this.answer2 = '';
+    this.answer3 = '';
   },
-  async wakeonlan(){
-    await this.$axios.$post('/api/wc', {
+  async sha1create(){
+    await this.$axios.$post('/api/md5', {
             input: this.text_value
           })
           .then((response) => {
-           this.answer = response;
+            this.answer = response;
          })
-
   }
 }
 }
 </script>
 
 <style lang="css">
-@media (min-width: 350px) {
-    .infeed {
-      height: 290px;
-    }
-  }
- @media (min-width: 500px) {
-    .infeed {
-      height: 290px;
-    }
-  }
- @media (min-width: 800px) {
-    .infeed {
-      height: 290px;
-    }
-  }
-#box {
-  background-color: lightgrey;
-   width: 300px;
-   border: 5px solid gray;
-   padding: 10%;
-   margin-left: 30%;
-
-}
 </style>

@@ -18,7 +18,7 @@
           :id="post.id" />
         </section>
           </div>
-          
+
                 </div>
               </div>
 
@@ -69,6 +69,22 @@ data() {
     phone: '',
     question: '',
     posts: [
+      {
+      title: 'MD-5 Hash Generator',
+      id: '/md5-hash-generator'
+    },
+      {
+      title: 'SHA-512 Hash Generator',
+      id: '/sha-512-hash-generator'
+    },
+      {
+      title: 'SHA-256 Hash Generator',
+      id: '/sha-256-generator'
+    },
+      {
+      title: 'SHA-1 Hash Generator',
+      id: '/sha-1-hash-generator'
+    },
       {
       title: 'Wake on LAN Tool',
       id: '/wake-on-lan'
