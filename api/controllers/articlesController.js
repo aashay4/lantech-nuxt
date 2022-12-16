@@ -79,7 +79,8 @@ module.exports.gipc = function (req, res, next) {
                        const browser = await puppeteer.launch({
                          args: ['--no-sandbox'],
                          timeout: 10000,
-                         headless:false
+                         headless:false,
+                         executablePath: '/usr/bin/chromium-browser'
                        });
                          const page = await browser.newPage();
                          await page.goto("https://www.instagram.com/accounts/login/?source=auth_switcher");
