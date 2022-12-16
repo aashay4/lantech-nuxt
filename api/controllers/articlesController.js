@@ -82,7 +82,6 @@ module.exports.gipc = function (req, res, next) {
                            '--no-sandbox',
                            '--disable-gpu',
                          ],
-                         headless:true,
                          dumpio: true,
                          executablePath: '/usr/bin/chromium-browser'
                        });
