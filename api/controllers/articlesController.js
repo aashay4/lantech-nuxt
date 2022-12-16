@@ -76,7 +76,6 @@ module.exports.gipc = function (req, res, next) {
                      var y  = x + "'s profile picture";
                      console.log(y)
                      async function scrapeInstagram(profile,usernameAndPasswordConfig) {
-                       console.log("Profile: " + profile)
                        const browser = await puppeteer.launch();
                          const page = await browser.newPage();
                          await page.goto("https://www.instagram.com/accounts/login/?source=auth_switcher");
@@ -115,7 +114,7 @@ module.exports.gipc = function (req, res, next) {
                        //console.log(link1);
                        const options = {
   url: link1,
-  dest: '/',               // will be saved to /path/to/dest/image.jpg
+  dest: '/var/www/html/vue/lantech-nuxt/',               // will be saved to /path/to/dest/image.jpg
 };
 
 download.image(options)

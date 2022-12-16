@@ -92,7 +92,7 @@ methods: {
   mimeTypeUrl(imglink1) {
   //  var images = require.context('../images/', false, /\.png$/)
   //return require('../images/'+imglink1)
-  return require('~/images/'+imglink1);
+  return require('@/images/'+imglink1);
  },
   reset(){
     this.answer = '';
