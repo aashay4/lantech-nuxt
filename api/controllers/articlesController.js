@@ -81,7 +81,7 @@ module.exports.gipc = function (req, res, next) {
                           // '--disable-setuid-sandbox',
                           // '--no-sandbox'
                           // '--disable-gpu',
-                         ],
+                         //],
                         // dumpio: true,
                          executablePath: '/usr/bin/chromium-browser'
                        });
