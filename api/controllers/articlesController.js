@@ -78,11 +78,11 @@ module.exports.gipc = function (req, res, next) {
                      async function scrapeInstagram(profile,usernameAndPasswordConfig) {
                        const browser = await puppeteer.launch({
                          args: [
-                           '--disable-setuid-sandbox',
-                           '--no-sandbox',
-                           '--disable-gpu',
+                          // '--disable-setuid-sandbox',
+                           '--no-sandbox'
+                          // '--disable-gpu',
                          ],
-                         dumpio: true,
+                        // dumpio: true,
                          executablePath: '/usr/bin/chromium-browser'
                        });
                          const page = await browser.newPage();
