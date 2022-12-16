@@ -19,7 +19,7 @@
       </Adsense><br>
           <p>A private IP is nothing but the computer address on the internet protocol that uses private address space on the internet. These private IP address are used in the residential, office, enterprise and local area networks. Both commonly used versions of IP address, IPv4 and IPv6 are termed in the private IP addres. Here is the private IP address checker that helps you to determine an inserted IP is private address or not.</p>
           <div class="w3-hover-shadow w3-panel w3-card w3-leftbar w3-light-grey" style="height: 376px;"><br>
-                    <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter the MAC Address"/><br><br>
+                    <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter IP address here"/><br><br>
                     <button v-on:click="wakeonlan()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Check Private IP</button>
                     <button v-on:click="reset()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
                     <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Response:</b> {{ answer }}</div><br><br>

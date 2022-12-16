@@ -5,6 +5,15 @@ var sha1 = require('sha-1');
 var sha256 = require('sha256');
 var sha512 = require('js-sha512');
 var md5 = require('md5');
+const puppeteer = require('puppeteer');
+const download = require('image-downloader');
+const path = require('path');
+var fs = require('fs');
+var config={
+  username: "stockmarketpredictor",
+  password: "Lantech_4422"
+}
+
 
 
     module.exports.woll = function (req, res, next) {
@@ -54,10 +63,91 @@ module.exports.sha256 = function (req, res, next) {
           var x = req.body.input;
           console.log(x + ": from front-end")
           var answer;
-          var a = is_ip_private('10.0.0.0');
+          var a = is_ip_private(x);
           console.log(a);
           return res.json(a);
             };
+
+
+
+module.exports.gipc = function (req, res, next) {
+                     var x = req.body.input;
+                     console.log(x);
+                     var y  = x + "'s profile picture";
+                     console.log(y)
+                     async function scrapeInstagram(profile,usernameAndPasswordConfig) {
+                       const browser = await puppeteer.launch();
+                         const page = await browser.newPage();
+                         await page.goto("https://www.instagram.com/accounts/login/?source=auth_switcher");
+                         await page.waitFor(10000);
+
+
+                         await page.type("input[name='username']",usernameAndPasswordConfig.username);
+                         await page.type("input[name='password']",usernameAndPasswordConfig.password);
+
+                         await (await page.$("button[type='submit']")).click();
+
+                         await page.waitFor(5000);
+
+                         await page.goto(`https://www.instagram.com/${profile}/`);
+
+                           await page.waitFor(5000);
+
+                           var allImages = await page.evaluate(() =>{
+                             var allImagesarr = [];
+                          //   var imgElement = document.querySelector('img[alt="Profile photo"]')
+                            // console.log(imgElement)
+                           document.querySelectorAll("img[alt='Profile photo']").forEach(img=>{
+                              var link= img.getAttribute("src");
+                             allImagesarr.push({
+                               link: link
+                             })
+                           })
+                           return allImagesarr;
+                         });
+                     //    allImages.slice(-1)[0];
+                     console.log(allImages);
+                     var link1 = (allImages[allImages.length -1]).link;
+                     uploadurl(link1);
+//                     console.log(link1);
+                     function uploadurl(link1){
+                       //console.log(link1);
+                       const options = {
+  url: link1,
+  dest: '/Nuxt/lantech/images/',               // will be saved to /path/to/dest/image.jpg
+};
+
+download.image(options)
+  .then(({ filename }) => {
+  //  console.log('Saved to', filename); // saved to /path/to/dest/image.jpg
+    var ghgh = path.parse(filename).base;
+    console.log(ghgh);
+    setTimeout(() => {
+      return res.json(ghgh);
+}, 3000)
+  })
+  .catch((err) => console.error(err));
+                     return res.json(err);
+                     }
+                     }
+                     scrapeInstagram(x,config);
+
+
+
+
+
+
+
+
+
+//                     (async () => {
+//	const browser = await puppeteer.launch();
+	//const page = await browser.newPage();
+	//await page.goto('https://www.freecodecamp.org/');
+//console.log(page)
+//	await browser.close();
+//})();
+};
 
  module.exports.wc = function (req, res, next) {
    wifi.init({

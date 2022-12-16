@@ -7,7 +7,7 @@
     <div class="w3-col l8 s12">
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-justify">
-          <h1>SHA-1 Hash generator</h1>
+          <h1>md5 hash generator</h1>
           <hr>
           <Adsense
         class="adsbygoogle infeed"
@@ -17,18 +17,22 @@
         data-ad-format="auto"
         data-full-width-responsive="true">
       </Adsense><br>
-          <p>SHA-1 is a widely used hash function that takes input and converts the user input into a 160-bit hash value. This output is represented in hexadecimal numbers.</p>
-          <div class="w3-hover-shadow w3-panel w3-card w3-leftbar w3-light-grey" style="height: 376px;"><br>
+          <p></p>
+          <div class="w3-hover-shadow w3-panel w3-card w3-leftbar w3-light-grey" style="height: 460;"><br>
                     <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a String"/><br><br>
-                    <button v-on:click="sha1create()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">SHA-1 Hash generator</button>
+                    <button v-on:click="sha1create()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">md5 hash generator</button>
                     <button v-on:click="reset()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
-                    <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Response:</b> {{ answer }}</div><br><br>
+                    <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 150px; overflow: scroll;"><b>MD5-HASH:</b> {{ answer }}</div><br><br>
+                    <!--<img v-if="showpic" :src="getImgUrl(imglink1)" alt="Insta" />-->
+                    <img v-if="showpic" :src="mimeTypeUrl(imglink1)" />
+
+                    {{imglink1}}
                     </div>
         </div>
       </div>
               <div class="w3-padding">
-                <h1 class="w3-center">How does SHA-1 Hash Generator Works?</h1>
-                <p>The SHA-1 generator is used in cryptography. To use this SHA-1 generator, just enter the value that you want to convert in the text box and click on SHA-1 generate button and this tool will automatically generate the SHA-1 Hash for the given string.</p>
+                <h1 class="w3-center">How does md5 hash generator Works?</h1>
+                <p></p>
               </div>
     <!-- About/Information menu -->
 
@@ -55,14 +59,14 @@ export default {
   head() {
   // sets document title
   return {
-  title: 'SHA-1 Hash generator',
+  title: 'Get instagram profie picture',
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: [
-      { hid: 'description', name: 'description', content: 'SHA-1 Hash generator' }
+      { hid: 'description', name: 'description', content: 'Instagram profile picture getter' }
   ],
   link: [
- {rel: 'canonical', href: 'https://lantechinfocom.co.in/sha-1-hash-generator'}
+ {rel: 'canonical', href: 'https://lantechinfocom.co.in/get-insta-profie-pic'}
 ]
 }
 },
@@ -73,25 +77,58 @@ components: {
 },
 data (){
   return {
+    showpic: false,
     text_value: '',
-    answer: ''
+    answer: '',
+    answer1: '',
+    answer2: '',
+    answer3: '',
+    imglink: '',
+    imglink1: '',
+    imglink2: ''
   }
 },
 methods: {
+  mimeTypeUrl(imglink1) {
+  //  var images = require.context('../images/', false, /\.png$/)
+  //return require('../images/'+imglink1)
+  return require('../images/'+imglink1);
+ },
   reset(){
     this.answer = '';
     this.text_value = '';
+    this.answer1 = '';
+    this.answer2 = '';
+    this.answer3 = '';
   },
   async sha1create(){
-    await this.$axios.$post('/api/sha1', {
+    await this.$axios.$post('/api/gipc', {
             input: this.text_value
           })
           .then((response) => {
             console.log(response)
-           this.answer = response
+            this.imglink2 = response;
+          //  this.showpic = true;
+          alert(this.imglink2)
+           this.sampletest();
          })
+  },
+  sampletest(){
+    //setTimeout(function(){
+    alert("it")
+    this.imglink1 = this.imglink2;
+    //this.picshowing();
+    this.showpic = true;
+    alert(this.showpic)
+  //}, 1500)
+},
+  picshowing(){
+    alert("In picshoing: " + this.imglink1)
+    //this.imglink = require('~/assets/'+this.imglink1)
+    //alert(this.imglink)
+
   }
-}
+  }
 }
 </script>
 

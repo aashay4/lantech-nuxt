@@ -1,6 +1,9 @@
 
 module.exports = {
   mode: 'universal',
+  images: {
+       domains: ['instagram.fstv8-2.fna.fbcdn.net'],
+   },
   /*
   ** Headers of the page
   */
