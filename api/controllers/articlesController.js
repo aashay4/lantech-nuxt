@@ -79,7 +79,7 @@ module.exports.gipc = function (req, res, next) {
                        const browser = await puppeteer.launch({
                          args: ['--no-sandbox'],
                          timeout: 10000,
-                         headless:false,
+                         headless:true,
                          executablePath: '/usr/bin/chromium-browser'
                        });
                          const page = await browser.newPage();
