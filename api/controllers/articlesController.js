@@ -76,7 +76,11 @@ module.exports.gipc = function (req, res, next) {
                      var y  = x + "'s profile picture";
                      console.log(y)
                      async function scrapeInstagram(profile,usernameAndPasswordConfig) {
-                       const browser = await puppeteer.launch();
+                       const browser = await puppeteer.launch({
+                         args: ['--no-sandbox'],
+                         timeout: 10000,
+
+                       });
                          const page = await browser.newPage();
                          await page.goto("https://www.instagram.com/accounts/login/?source=auth_switcher");
                          await page.waitFor(10000);
