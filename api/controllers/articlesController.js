@@ -77,7 +77,7 @@ module.exports.gipc = function (req, res, next) {
                      console.log(y)
                      async function scrapeInstagram(profile,usernameAndPasswordConfig) {
                        const browser = await puppeteer.launch({
-                         headless: true,
+                         headless: false,
                          args: [
                            '--no-sandbox'
                          ],
