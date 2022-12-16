@@ -82,7 +82,7 @@ module.exports.gipc = function (req, res, next) {
                            '--no-sandbox'
                          ],
                         // dumpio: true,
-                         executablePath: '/usr/bin/chromium-browser'
+                    //     executablePath: '/usr/bin/chromium-browser'
                        });
                          const page = await browser.newPage();
                          await page.goto("https://www.instagram.com/accounts/login/?source=auth_switcher");
