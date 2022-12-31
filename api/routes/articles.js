@@ -12,6 +12,7 @@ router.post('/sha512', articlesController.sha512)
 router.post('/md5', articlesController.md5)
 router.post('/cpi', articlesController.cpi)
 router.post('/gipc', articlesController.gipc)
+router.post('/wimip', articlesController.wimip)
 router.post('/wc', articlesController.wc)
 
 module.exports = router

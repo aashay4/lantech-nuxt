@@ -13,6 +13,9 @@ var config={
   username: "stockmarketpredictor",
   password: "Lantech_4422"
 }
+var geoip = require('geoip-lite');
+const getIP = require('external-ip')();
+
 
 
 
@@ -68,7 +71,21 @@ module.exports.sha256 = function (req, res, next) {
           return res.json(a);
             };
 
+module.exports.wimip = function (req, res, next) {
+         getIP((err, ip) => {
+    if (err) {
+        // every service in the list has failed
+        throw err;
+    }
+    var ip = ip;
+    var geo = geoip.lookup(ip);
 
+return res.json(geo);
+
+});
+
+
+           };
 
 module.exports.gipc = function (req, res, next) {
                      var x = req.body.input;

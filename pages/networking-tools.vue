@@ -74,16 +74,8 @@ data() {
       id: '/md5-hash-generator'
     },
       {
-      title: 'SHA-512 Hash Generator',
-      id: '/sha-512-hash-generator'
-    },
-      {
-      title: 'SHA-256 Hash Generator',
-      id: '/sha-256-generator'
-    },
-      {
-      title: 'SHA-1 Hash Generator',
-      id: '/sha-1-hash-generator'
+      title: 'SHA Hash Generator',
+      id: '/sha-hash-generator'
     },
       {
       title: 'Wake on LAN Tool',
