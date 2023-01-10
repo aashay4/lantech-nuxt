@@ -46,8 +46,6 @@
 import footer from '@/components/footer.vue'
 import contactsection from '@/components/contactsection.vue'
 import header from '@/components/header.vue'
-import socket from '~/plugins/socket.io.js'
-
 export default {
   head() {
   // sets document title
@@ -84,17 +82,24 @@ methods: {
 
 //var regex = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
     await this.$axios.$post('/api/wimip', {
-            input: this.text_value
+            input: "this.text_value"
           })
           .then((response) => {
             console.log(response)
            this.answer = response;
          })
   },
-  wakeonlan1(){
-    const message = this.text_value;
-//    alert(message)
-socket.emit('myip', message)
+  async wakeonlan1(){
+    var mystring= this.text_value;
+
+//var regex = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+    await this.$axios.$post('/api/wimip1', {
+            input: "this.text_value"
+          })
+          .then((response) => {
+            console.log(response)
+           this.answer = response;
+         })
   }
 }
 }
