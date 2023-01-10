@@ -123,6 +123,7 @@ module.exports.gipc = function (req, res, next) {
                     //     executablePath: '/usr/bin/chromium-browser'
                        });
                          const page = await browser.newPage();
+                         await page.setBypassCSP(true);
                          await page.goto("https://www.instagram.com/accounts/login/?source=auth_switcher");
                          await page.waitFor(10000);
 
