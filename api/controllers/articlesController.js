@@ -15,7 +15,7 @@ var whois = require('whois');
 
 var config={
   username: "stockmarketpredictor",
-  password: "Lantech_4296"
+  password: "Lantech_2811"
 }
 var geoip = require('geoip-lite');
 const getIP = require('external-ip')();
