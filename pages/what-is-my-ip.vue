@@ -19,7 +19,7 @@
       </Adsense><br>
           <div class="w3-hover-shadow w3-panel w3-card w3-leftbar w3-light-grey" style="height: 376px;"><br>
                     <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter IP address here"/><br><br>
-                    <button v-on:click="wakeonlan()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Check Private IP</button>
+                    <button v-on:click="wakeonlan1()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Check Private IP</button>
                     <button v-on:click="reset()" class="w3-button w3-border w3-amber w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
                     <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Response:</b> {{ answer }}</div><br><br>
                     </div>
@@ -46,6 +46,8 @@
 import footer from '@/components/footer.vue'
 import contactsection from '@/components/contactsection.vue'
 import header from '@/components/header.vue'
+import socket from '~/plugins/socket.io.js'
+
 export default {
   head() {
   // sets document title
@@ -82,12 +84,17 @@ methods: {
 
 //var regex = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
     await this.$axios.$post('/api/wimip', {
-            input: "this.text_value"
+            input: this.text_value
           })
           .then((response) => {
             console.log(response)
            this.answer = response;
          })
+  },
+  wakeonlan1(){
+    const message = this.text_value;
+//    alert(message)
+socket.emit('myip', message)
   }
 }
 }

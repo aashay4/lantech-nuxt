@@ -9,6 +9,8 @@ const puppeteer = require('puppeteer');
 const download = require('image-downloader');
 const path = require('path');
 var fs = require('fs');
+const dns = require('dns');
+
 var config={
   username: "stockmarketpredictor",
   password: "Lantech_4422"
@@ -72,15 +74,24 @@ module.exports.sha256 = function (req, res, next) {
             };
 
 module.exports.wimip = function (req, res, next) {
-         getIP((err, ip) => {
+  var domain = req.body.input;
+var ipp = domain.replace(/^https?:\/\//, '');
+  var ipaddress;
+  dns.lookup(ipp, (err, address, family) => {
+    //console.log('address: %j family: IPv%s', address, family);
+    ipaddress = address;
+    console.log(ipaddress)
+  });
+       getIP((err, ip) => {
     if (err) {
         // every service in the list has failed
         throw err;
     }
-    var ip = ip;
+    var ip = ipaddress;
     var geo = geoip.lookup(ip);
 
 return res.json(geo);
+//console.log('your IP is: ' + req.connection.remoteAddress);
 
 });
 

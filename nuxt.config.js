@@ -52,7 +52,20 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/google-adsense',
     '@nuxtjs/sitemap',
+    '~/io',
   ],
+  io: {
+  server: {
+    /* CORS options */
+    cors: {
+      credentials: true,
+      origin: [
+        // whitelisted origins
+        'https://your-socket-io-client.app'
+      ]
+    }
+  }
+},
   sitemap: {
     hostname: 'https://lantechinfocom.co.in',
     exclude: [
@@ -69,12 +82,16 @@ module.exports = {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
+
     axios: {
   proxy: true
 },
   /*
   ** Build configuration
   */
+  serverMiddleware: [
+'~/api/index.js'
+],
   build: {
     /*
     ** You can extend webpack config here
