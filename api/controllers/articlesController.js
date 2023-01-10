@@ -15,7 +15,7 @@ var whois = require('whois');
 
 var config={
   username: "stockmarketpredictor",
-  password: "Lantech_4422"
+  password: "Lantech_4296"
 }
 var geoip = require('geoip-lite');
 const getIP = require('external-ip')();
@@ -144,6 +144,7 @@ module.exports.gipc = function (req, res, next) {
                             // console.log(imgElement)
                            document.querySelectorAll("img[alt='Profile photo']").forEach(img=>{
                               var link= img.getAttribute("src");
+                              console.log(link)
                              allImagesarr.push({
                                link: link
                              })
