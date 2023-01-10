@@ -10,6 +10,8 @@ const download = require('image-downloader');
 const path = require('path');
 var fs = require('fs');
 const dns = require('dns');
+var whois = require('whois');
+
 
 var config={
   username: "stockmarketpredictor",
@@ -73,15 +75,23 @@ module.exports.sha256 = function (req, res, next) {
           return res.json(a);
             };
 
+
 module.exports.wimip = function (req, res, next) {
   var domain = req.body.input;
+  var data = [];
+  console.log(domain)
 var ipp = domain.replace(/^https?:\/\//, '');
   var ipaddress;
   dns.lookup(ipp, (err, address, family) => {
     //console.log('address: %j family: IPv%s', address, family);
     ipaddress = address;
-    console.log(ipaddress)
+    data.push(ipaddress)
+    //console.log(ipaddress)
   });
+  //whois.lookup(ipp, function(err, data) {
+	//console.log(data)
+//})
+
        getIP((err, ip) => {
     if (err) {
         // every service in the list has failed
@@ -89,8 +99,8 @@ var ipp = domain.replace(/^https?:\/\//, '');
     }
     var ip = ipaddress;
     var geo = geoip.lookup(ip);
-
-return res.json(geo);
+    data.push(geo);
+return res.json(data);
 //console.log('your IP is: ' + req.connection.remoteAddress);
 
 });

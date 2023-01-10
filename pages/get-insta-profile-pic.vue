@@ -7,7 +7,7 @@
     <div class="w3-col l8 s12">
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-justify">
-          <h1>md5 hash generator</h1>
+          <h1>Get Insta Profile picture</h1>
           <hr>
           <Adsense
         class="adsbygoogle infeed"
@@ -20,9 +20,9 @@
           <p></p>
           <div class="w3-hover-shadow w3-panel w3-card w3-leftbar w3-light-grey" style="height: 460;"><br>
                     <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a String"/><br><br>
-                    <button v-on:click="sha1create()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">md5 hash generator</button>
+                    <button v-on:click="sha1create()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Get Insta Profile Picture</button>
                     <button v-on:click="reset()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
-                    <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 150px; overflow: scroll;"><b>MD5-HASH:</b> {{ answer }}</div><br><br>
+                    <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 150px; overflow: scroll;"><b>Profie Pic:</b> {{ answer }}</div><br><br>
                     <!--<img v-if="showpic" :src="getImgUrl(imglink1)" alt="Insta" />-->
                     <img v-if="showpic" :src="mimeTypeUrl(imglink1)" />
 
