@@ -11,6 +11,7 @@ const path = require('path');
 var fs = require('fs');
 const dns = require('dns');
 var whois = require('whois');
+const Crawler = require("crawler");
 
 
 var config={
@@ -111,9 +112,33 @@ return res.json(data);
 module.exports.gipc = function (req, res, next) {
                      var x = req.body.input;
                      console.log(x);
-                     var y  = x + "'s profile picture";
-                     console.log(y)
-                     async function scrapeInstagram(profile,usernameAndPasswordConfig) {
+
+                     let c = new Crawler();
+                     var url = 'https://www.instagram.com/' + x + '/?__a=1&__d=dis';
+function crawlAllUrls(url) {
+    console.log(`Crawling ${url}`);
+    c.queue({
+        uri: url,
+        callback: function (err, res, done) {
+            let $ = res.$;
+            console.log(res.body)
+            var obj = $.parseJSON();
+console.log(obj['profile_pic_url_hd']);
+
+//            var matches = res.body.match(/\bhttps?:\/\/\S+/gi);
+            done();
+        }
+    })
+}
+
+function setstring(){
+
+}
+setstring();
+crawlAllUrls(url);
+
+
+  /*                   async function scrapeInstagram(profile,usernameAndPasswordConfig) {
                        const browser = await puppeteer.launch({
                          headless: true,
                          args: [
@@ -177,7 +202,7 @@ download.image(options)
                      return res.json(err);
                      }
                      }
-                     scrapeInstagram(x,config);
+                     scrapeInstagram(x,config);  */
 
 
 

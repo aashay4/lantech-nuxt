@@ -16,6 +16,7 @@
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "bignumber.js": "^9.0.1",
+    "crawler": "^1.4.0",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "external-ip": "^2.3.1",
