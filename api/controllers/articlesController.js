@@ -121,21 +121,39 @@ function crawlAllUrls(url) {
         uri: url,
         callback: function (err, res, done) {
             let $ = res.$;
-            console.log(res.body)
-            var obj = $.parseJSON();
-console.log(obj['profile_pic_url_hd']);
+//            console.log(res.body)
+            var c = res.body.indexOf("profile_pic_url_hd");
+//console.log(c)
+
+//var g = x.substring(0, x.indexOf("profile_pic_url_hd"));
+//console.log(g);
+
+var t = res.body.substr(c+21);
+//console.log(t)
+var f = t.substring(0, t.indexOf(","));
+f = f.substr(0,f.length-1);
+console.log(f);
 
 //            var matches = res.body.match(/\bhttps?:\/\/\S+/gi);
             done();
         }
     })
 }
+function download1(){
+  const options = {
+  url: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+  dest: '/var/www/html/vue/lantech-nuxt/',               // will be saved to /path/to/dest/image.jpg
+};
 
-function setstring(){
+download.image(options)
+  .then(({ filename }) => {
+    console.log('Saved to', filename); // saved to /path/to/dest/image.jpg
+  })
+  .catch((err) => console.error(err));
 
 }
-setstring();
-crawlAllUrls(url);
+download1();
+//crawlAllUrls(url);
 
 
   /*                   async function scrapeInstagram(profile,usernameAndPasswordConfig) {
